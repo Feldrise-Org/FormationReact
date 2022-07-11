@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
+import { CodeBlock, dracula } from "react-code-blocks";
 
 const CodePassageVariable = () => {
   return (
@@ -9,8 +10,8 @@ const CodePassageVariable = () => {
         <h2 className="title2">Passeur de variable</h2>
         <div className="Body">
           <div className="Item">
-            <pre className="code">
-              {`import React, { useState } from "react";
+            <CodeBlock
+              text={`import React, { useState } from "react";
 import VarAfficheur from "./VarAficcheur";
 import "./VarPassage.css";
 
@@ -51,15 +52,17 @@ const VarPassage = () => {
   );
 };
 
-export default VarPassage;
-`}
-            </pre>
+export default VarPassage;`}
+              language={"jsx"}
+              showLineNumbers={true}
+              theme={dracula}
+            />
           </div>
         </div>
         <div className="container">
           <h2 className="title2">Afficheur de variable</h2>
-          <pre className="code">
-            {`import React from "react";
+          <CodeBlock
+            text={`import React from "react";
 import { useState } from "react";
 
 const Afficheur_de_variable = ({ instance, passage }) => {
@@ -86,9 +89,11 @@ const Afficheur_de_variable = ({ instance, passage }) => {
   );
 };
 
-export default Afficheur_de_variable;
-`}
-          </pre>
+export default Afficheur_de_variable;`}
+            language={"jsx"}
+            showLineNumbers={true}
+            theme={dracula}
+          />
         </div>
       </div>
     </div>

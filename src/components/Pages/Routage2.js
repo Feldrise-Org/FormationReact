@@ -1,4 +1,5 @@
 import React from "react";
+import { CodeBlock, dracula } from "react-code-blocks";
 import RoutageEx from "../Autres/RoutageEx";
 import Header from "../Header/Header";
 
@@ -9,8 +10,8 @@ const Routage1 = () => {
       <div className="container">
         <h2 className="title2">Ici il y a le code !</h2>
         <RoutageEx />
-        <pre className="code">
-          {`import "./App.css";
+        <CodeBlock
+          text={`import "./App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./components/Pages/HomePage";
@@ -54,9 +55,12 @@ function App() {
 export default App;
 
 `}
-        </pre>
-        <pre className="code">
-          {`import React from "react";
+          language={"jsx"}
+          showLineNumbers={true}
+          theme={dracula}
+        />
+        <CodeBlock
+          text={`import React from "react";
 import { Link } from "react-router-dom";
 
 const RoutageEx = () => {
@@ -77,7 +81,10 @@ const RoutageEx = () => {
 export default RoutageEx;
 
 `}
-        </pre>
+          language={"jsx"}
+          showLineNumbers={true}
+          theme={dracula}
+        />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import VarPassage from "../passageVariable/VarPassage";
 import { Link } from "react-router-dom";
+import { CodeBlock, dracula } from "react-code-blocks";
 
 const PassageVariableBody = () => {
   return (
@@ -65,14 +66,24 @@ const PassageVariableBody = () => {
             Ici, on fait passer deux props, "passage" qui envoit ce que l'on a
             tapé dans la zone de texte, et "instance" qui permet de numéroter
             l'enfant à l'aide de la key.
-            <pre className="code">
-              {`<VarAfficheur passage={passage[index]} instance={index + 1} />`}
-            </pre>
+            <CodeBlock
+              text={
+                "<VarAfficheur passage={passage[index]} instance={index + 1} />"
+              }
+              language={"jsx"}
+              showLineNumbers={false}
+              theme={dracula}
+            />
             Ensuite, on peut directement récupérer ces props du côté de l'enfant
             lors de sa déclaration.
-            <pre className="code">
-              {`const Afficheur_de_variable = ({ instance, passage }) => {`}
-            </pre>
+            <CodeBlock
+              text={
+                "const Afficheur_de_variable = ({ instance, passage }) => {"
+              }
+              language={"jsx"}
+              showLineNumbers={false}
+              theme={dracula}
+            />
           </div>
           <div className="Item">
             <h3>Hook</h3>
@@ -84,10 +95,13 @@ const PassageVariableBody = () => {
             <br />
             Ici, on peut simplement le voir comme une variable immutable,
             modifiable seulement à travers son setteur.
-            <pre className="code">
-              {`  const [passage, setPassage] = useState([]);
-  const [ajout, setAjout] = useState([]);`}
-            </pre>
+            <CodeBlock
+              text={`const [passage, setPassage] = useState([]);
+const [ajout, setAjout] = useState([]);`}
+              language={"jsx"}
+              showLineNumbers={false}
+              theme={dracula}
+            />
           </div>
           <div className="Item">
             <h3>Keys</h3>
@@ -107,13 +121,16 @@ const PassageVariableBody = () => {
             et un autre sera généré, un chiffre indique son identifiant unique,
             ici simplement un index.
             <br />
-            <pre className="code">
-              {`{passage.map((elem, index) => (
+            <CodeBlock
+              text={`{passage.map((elem, index) => (
     <div className="Afficheur" key={index}>
       <VarAfficheur passage={passage[index]} instance={index + 1} />
     </div>
   ))}`}
-            </pre>
+              language={"jsx"}
+              showLineNumbers={false}
+              theme={dracula}
+            />
             Pour comprendre comment tout ça s'articule, je vous invite à
             regarder :
             <Link className="link" to={"/PassageVariableCode"}>

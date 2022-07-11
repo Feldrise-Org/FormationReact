@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
+import { CodeBlock, dracula } from "react-code-blocks";
 
 const CodePassageVariable = () => {
   return (
@@ -9,8 +10,8 @@ const CodePassageVariable = () => {
         <h2 className="title2">Afficheur du compteur</h2>
         <div className="Body">
           <div className="Item">
-            <pre className="code">
-              {`import React, { useState } from "react";
+            <CodeBlock
+              text={`import React, { useState } from "react";
 import SetFonction from "./SetFonction";
 import "./FonctionPassage.css";
 
@@ -55,13 +56,16 @@ const FonctionPassage = () => {
 
 export default FonctionPassage;
 `}
-            </pre>
+              language={"jsx"}
+              showLineNumbers={true}
+              theme={dracula}
+            />
           </div>
         </div>
         <div className="container">
           <h2 className="title2">Setteur du compteur</h2>
-          <pre className="code">
-            {`import React from "react";
+          <CodeBlock
+            text={`import React from "react";
 import "./SetFonction.css";
 
 const SetFonction = ({ compteur, setCompteur }) => {
@@ -85,7 +89,10 @@ const SetFonction = ({ compteur, setCompteur }) => {
 
 export default SetFonction;
 `}
-          </pre>
+            language="jsx"
+            showLineNumbers={true}
+            theme={dracula}
+          />
         </div>
       </div>
     </div>
