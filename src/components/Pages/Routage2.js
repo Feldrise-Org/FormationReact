@@ -1,5 +1,16 @@
-//import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import RoutageEx from "../Autres/RoutageEx";
+import Header from "../Header/Header";
+
+const Routage1 = () => {
+  return (
+    <div>
+      <Header />
+      <div className="container">
+        <h2 className="title2">Ici il y a le code !</h2>
+        <RoutageEx />
+        <pre className="code">
+          {`import "./App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./components/Pages/HomePage";
@@ -41,3 +52,35 @@ function App() {
 }
 
 export default App;
+
+`}
+        </pre>
+        <pre className="code">
+          {`import React from "react";
+import { Link } from "react-router-dom";
+
+const RoutageEx = () => {
+  return (
+    <div className="container">
+      <Link className="link" to={"/RoutagePage1"}>
+        Page 1
+      </Link>
+      <Link className="link" to={"/RoutagePage2"}>
+        Page 2
+      </Link>
+      <Link className="link" to={"/RoutagePage3"}>
+        Page 3
+      </Link>
+    </div>
+  );
+};
+export default RoutageEx;
+
+`}
+        </pre>
+      </div>
+    </div>
+  );
+};
+
+export default Routage1;

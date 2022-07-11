@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.title2 {
+  color: whitesmoke;
+  font-weight: 500;
+  margin-top: 150px;
+}
+
+.paragraphes {
+  padding: 30px;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.txt {
+  text-align: left;
+}
+
+.titlep {
+  margin: 20px;
+}
+
+.linktxt {
+  text-align: center;
+  color: white;
+}
+
+.linktxt:hover {
+  color: #61dafb;
+}

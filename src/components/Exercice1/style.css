@@ -1,0 +1,129 @@
+/*
+
+
+
+
+
+
+
+
+
+*/
+
+.ResumeH1 {
+  display: flex;
+  justify-content: center;
+}
+
+.ResumeInput {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.ResumeButton {
+  cursor: pointer;
+  background-color: #008cba;
+  color: white;
+  padding: 5px 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: auto 50%;
+  transform: translateX(-50%);
+}
+
+.ResumeForm {
+  display: flex;
+  justify-content: center;
+}
+
+.ResumeUl {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: auto 0px;
+  padding: 5px;
+}
+
+.inventaire {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #61dafb;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.InventaireSpan {
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.InventaireH3 {
+  align-self: center;
+  margin: 5px;
+}
+
+.InventaireInput {
+  padding: 7px;
+  align-self: center;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.InventaireButton {
+  background-color: #008cba;
+  color: white;
+  width: 50%;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 5px;
+  align-self: center;
+  cursor: pointer;
+}
+.InventaireUl {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.InventaireSpan {
+  justify-self: flex-end;
+}
+.InventaireH3 {
+  text-align: center;
+  margin: auto;
+}
+
+.compteur {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #61dafb;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+.CompteurSpan {
+  margin-left: 93%;
+  cursor: pointer;
+}
+/*button {
+  all: initial;
+  width: 48%;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}*/
+.CompteurDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.CompteurH3 {
+  text-align: center;
+}

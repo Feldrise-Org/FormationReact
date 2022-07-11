@@ -1,0 +1,11 @@
+.SetFonction {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid rgb(0, 55, 255);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
