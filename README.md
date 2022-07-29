@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Ce Git contient une formation React à destination des collaborateurs et des clients de Feldrise.
+Ce Git contient une formation React à destination des collaborateurs et des clients de [Feldrise](https://feldrise.com/).
 Cette formation contient tout ce qui est nécessaire à l'apprentissage des bases de React, de l'installation jusqu'au concepts necessaire pour créer sa propre application React.
 
 ## Contenu
@@ -39,7 +39,7 @@ Contient aussi un dernier exercice étendant le premier implémentant le concept
 ## Conclusion
 
 Une fois la formation terminé, vous devriez être capable de faire votre propre application React !
-Si vous voulez approndir et implémenter un backend à votre application, je vous conseille de vous intéresser à NextJs, le framework de React.
+Si vous voulez approndir et implémenter un backend à votre application, je vous conseille de vous intéresser à [NextJs](https://nextjs.org/), le framework de React.
 
 ### Crédit
 
