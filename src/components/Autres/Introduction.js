@@ -9,7 +9,7 @@ const Introduction = () => {
         <div className="titlep">
           <h3>Qu'est-ce que React ?</h3>
           <p className="txt">
-            React est une bibliothèque de javascript permettant de faire des UI
+            React est une bibliothèque de JavaScript permettant de faire des UI
             (user interface) à partir de composants. L’intérêt de ces composants
             est de pouvoir les combiner pour créer des structures complexes
             facilement et de ne pas dupliquer inutilement du code puisque l’on
@@ -27,14 +27,13 @@ const Introduction = () => {
         <div className="titlep">
           <h3>Qui utilise React ?</h3>
           <p>
-            De nombreuses grandes entreprise utilisent React, on peut citer par
-            exemple Netflix ou Airbnb. Plus tard nous parlerons de React
-            Developer tool, qui est une extension d’aide au développer React.
-            Cette extension permet, entre autres, de savoir lorsque la page sur
-            laquelle nous naviguons contient, ou pas, du React. Avec cela, on
-            peut se rendre compte par soit même, de la quantité d’entreprise
-            utilisant React. Rien qu’aujourd’hui, j’ai constaté que Twitch et
-            Carrefour utilisent React.
+            De nombreuses grandes entreprises utilisent React, on peut citer par
+            exemple Netflix, Facebook ou Instagram. Plus tard nous parlerons de
+            React Developer tool, qui est une extension d’aide au développer
+            React. Cette extension permet, entre autres, de savoir lorsque la
+            page sur laquelle nous naviguons contient, ou pas, du React. Avec
+            cela, on peut se rendre compte par soit même, de la quantité
+            d’entreprises utilisant React.
           </p>
         </div>
       </div>
@@ -67,11 +66,11 @@ const Introduction = () => {
             <span>
               Comme React est surtout utilisé pour du front-end, il faut aussi
               avoir des bases de HTLM/CSS, de plus que le HTML est directement
-              intégré au code en React. Si vous n’êtes pas à l’aise avec ces
-              technologies je vous conseille de regarder les liens suivants,
-              mais dans tous les cas ce ne sera sans doute pas un sujet bloquant
-              pour la suite puisque cela s’apprend naturellement au fur et à
-              mesure :{" "}
+              intégré au code en React aux travers de JSX. Si vous n’êtes pas à
+              l’aise avec ces technologies je vous conseille de regarder les
+              liens suivants, mais dans tous les cas ce ne sera sans doute pas
+              un sujet bloquant pour la suite puisque cela s’apprend
+              naturellement au fur et à mesure :{" "}
             </span>
             <a
               className="linktxt"
